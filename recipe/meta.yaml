@@ -16,10 +16,10 @@ requirements:
   build:
     - python
     - setuptools
-    - scipy
   run:
     - python
-    - scipy
+    - scipy >=0.11
+    - numpy >=1.3
 
 test:
   imports:
