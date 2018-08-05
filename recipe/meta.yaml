@@ -10,12 +10,20 @@ source:
 
 build:
   number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  script:
+    - dos2unix pysal/spreg/utils.py   # [win]
+    - dos2unix pysal/spreg/probit.py  # [win]
+    - dos2unix pysal/spreg/twosls.py  # [win]
+    - python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
+  build:
+#    - m2-base
+#    - m2-filesystem
+    - m2-dos2unix
   host:
     - python
-    - pip
+    - setuptools
   run:
     - python
     - scipy >=0.11
