@@ -71,6 +71,7 @@ test:
     - pysal.model
     - pysal.lib
   commands:
+    - pip check
     - pytest -vv pysal/tests
 
 about:
