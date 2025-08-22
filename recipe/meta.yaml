@@ -72,6 +72,7 @@ test:
     - pysal.lib
   commands:
     - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
     - pytest -vv pysal/tests
 
 about:
