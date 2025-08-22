@@ -58,15 +58,20 @@ requirements:
     - xarray >=2022.3
 
 test:
+  source_files:
+    - pysal/tests
   requires:
     - python
     - pip
+    - pytest
   imports:
     - pysal
     - pysal.viz
     - pysal.explore
     - pysal.model
     - pysal.lib
+  commands:
+    - pytest -vv pysal/tests
 
 about:
   home: http://pysal.org
