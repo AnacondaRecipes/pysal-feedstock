@@ -74,6 +74,9 @@ requirements:
 #    - urllib3 <1.25
 
 test:
+  requires:
+    - python
+    - pip
   imports:
     - pysal
     - pysal.viz
