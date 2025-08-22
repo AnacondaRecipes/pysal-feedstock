@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm >=6.2
     - toml
   run:
+    - python
     - beautifulsoup4 >=4.10
     - geopandas >=0.10.0
     - numpy >=1.22
