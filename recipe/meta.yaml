@@ -76,16 +76,15 @@ test:
     - pytest -vv pysal/tests
 
 about:
-  home: http://pysal.org
+  home: https://github.com/pysal/pysal
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: Library of spatial analysis functions
   description: |
     PySAL(Python Spatial Analysis Library) for spatial data science and the development of high level applications.
-  doc_url: http://pysal.org/pysal
-  doc_source_url: https://github.com/pysal/pysal/blob/master/doc/source/index.rst
-  dev_url: https://github.com/pysal
+  doc_url: https://pysal.org/docs
+  dev_url: https://github.com/pysal/pysal
 
 extra:
   recipe-maintainers:
