@@ -1,13 +1,13 @@
 {% set name = "pysal" %}
-{% set version = "25.7" %}
+{% set version = "26.1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca1452a1d57811cbc4708002a38ece6fe58b8597f966b310731e2e4014ddf21b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 84616c5152d04779d3f770c7c1c22076118bc722c5cfa506777837cd8ab9e40a
 
 build:
   # even though package itself is for py>=310, it's dependency pinnings specified (e.g. mapclassify) are not
