@@ -1,5 +1,5 @@
 {% set name = "pysal" %}
-{% set version = "25.7" %}
+{% set version = "26.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca1452a1d57811cbc4708002a38ece6fe58b8597f966b310731e2e4014ddf21b
+  sha256: 84616c5152d04779d3f770c7c1c22076118bc722c5cfa506777837cd8ab9e40a
 
 build:
   # even though package itself is for py>=310, it's dependency pinnings specified (e.g. mapclassify) are not
@@ -25,6 +25,7 @@ requirements:
     - toml
   run:
     - python
+    - lazy_loader >=0.3
     - beautifulsoup4 >=4.10
     - geopandas >=0.10.0
     - numpy >=1.22
@@ -35,23 +36,24 @@ requirements:
     - scipy >=1.8
     - shapely >=2.0.1
     - scikit-learn >=1.1
-    - libpysal >=4.13.0
-    - access >=1.1.9
-    - esda >=2.7.1
-    - giddy >=2.3.6
+    - libpysal >=4.14.1
+    - access >=1.1.10
+    - esda >=2.8.1
+    - giddy >=2.3.8
     - inequality >=1.1.2
-    - pointpats >=2.5.1
-    - segregation >=2.5.2
+    - pointpats >=2.5.2
+    - segregation >=2.5.3
     - spaghetti >=1.7.6
     - mgwr >=2.2.1
-    - momepy >=0.10.0
+    - momepy >=0.11.0
     - spglm >=1.1.0
     - spint >=1.0.7
-    - spreg >=1.8.3
-    - tobler >=0.12.1
+    - spreg >=1.8.5
+    - tobler >=0.13.0
     - mapclassify >=2.10.0
     - splot >=1.1.7
     - spopt >=0.7.0
+    - gwlearn >=0.1.1
   run_constrained:
     - joblib >=1.2
     - networkx >=2.7
