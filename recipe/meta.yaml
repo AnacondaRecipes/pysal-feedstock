@@ -37,7 +37,7 @@ requirements:
     - shapely >=2.0.1
     - scikit-learn >=1.1
     - libpysal >=4.14.1
-    - access >=1.1.10
+    - access >=1.1.10.post3
     - esda >=2.8.1
     - giddy >=2.3.8
     - inequality >=1.1.2
@@ -69,6 +69,7 @@ test:
     - python
     - pip
     - pytest
+    - urllib3 >=1.26
   imports:
     - pysal
     - pysal.viz
