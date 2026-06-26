@@ -13,7 +13,7 @@ build:
   # even though package itself is for py>=310, it's dependency pinnings specified (e.g. mapclassify) are not
   # available for py310.
   skip: true  # [py<311]
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
